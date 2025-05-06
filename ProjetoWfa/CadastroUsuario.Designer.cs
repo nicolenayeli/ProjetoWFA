@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtNome = new TextBox();
             label1 = new Label();
             label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
             label6 = new Label();
-            domainUpDown1 = new DomainUpDown();
             label7 = new Label();
             label8 = new Label();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            txtSenha = new TextBox();
+            bntCadastrar = new Button();
+            bntCancelar = new Button();
             button3 = new Button();
             button4 = new Button();
             pictureBox1 = new PictureBox();
+            txtCpf = new TextBox();
+            label5 = new Label();
+            txtId = new TextBox();
+            txtTipoUsuario = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -58,26 +58,18 @@
             label2.TabIndex = 1;
             label2.Text = "Cadastro de Usuario";
             // 
-            // textBox1
+            // txtNome
             // 
-            textBox1.Font = new Font("Microsoft Sans Serif", 8.25F);
-            textBox1.Location = new Point(306, 147);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(241, 20);
-            textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Microsoft Sans Serif", 8.25F);
-            textBox2.Location = new Point(415, 190);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(48, 20);
-            textBox2.TabIndex = 3;
+            txtNome.Font = new Font("Microsoft Sans Serif", 8.25F);
+            txtNome.Location = new Point(287, 143);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(241, 20);
+            txtNome.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(255, 147);
+            label1.Location = new Point(236, 143);
             label1.Name = "label1";
             label1.Size = new Size(40, 15);
             label1.TabIndex = 5;
@@ -86,48 +78,20 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(255, 190);
+            label3.Location = new Point(236, 186);
             label3.Name = "label3";
             label3.Size = new Size(26, 15);
             label3.TabIndex = 6;
             label3.Text = "Cpf";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(287, 193);
-            label4.Name = "label4";
-            label4.Size = new Size(75, 15);
-            label4.TabIndex = 7;
-            label4.Text = "___-___-___ -_";
-            label4.Click += label4_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(391, 193);
-            label5.Name = "label5";
-            label5.Size = new Size(18, 15);
-            label5.TabIndex = 8;
-            label5.Text = "ID";
-            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(254, 265);
+            label6.Location = new Point(235, 261);
             label6.Name = "label6";
             label6.Size = new Size(90, 15);
             label6.TabIndex = 9;
             label6.Text = "Tipo de Usuario";
-            // 
-            // domainUpDown1
-            // 
-            domainUpDown1.Location = new Point(351, 263);
-            domainUpDown1.Name = "domainUpDown1";
-            domainUpDown1.Size = new Size(120, 23);
-            domainUpDown1.TabIndex = 11;
-            domainUpDown1.Text = "Comum";
-            domainUpDown1.SelectedItemChanged += domainUpDown1_SelectedItemChanged;
             // 
             // label7
             // 
@@ -142,38 +106,39 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(255, 226);
+            label8.Location = new Point(236, 222);
             label8.Name = "label8";
             label8.Size = new Size(39, 15);
             label8.TabIndex = 15;
             label8.Text = "Senha";
             // 
-            // textBox3
+            // txtSenha
             // 
-            textBox3.Font = new Font("Microsoft Sans Serif", 8.25F);
-            textBox3.Location = new Point(313, 226);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(193, 20);
-            textBox3.TabIndex = 14;
+            txtSenha.Font = new Font("Microsoft Sans Serif", 8.25F);
+            txtSenha.Location = new Point(294, 222);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(193, 20);
+            txtSenha.TabIndex = 14;
             // 
-            // button1
+            // bntCadastrar
             // 
-            button1.Location = new Point(237, 340);
-            button1.Name = "button1";
-            button1.Size = new Size(127, 29);
-            button1.TabIndex = 16;
-            button1.Text = "Cadastrar";
-            button1.UseVisualStyleBackColor = true;
+            bntCadastrar.Location = new Point(237, 340);
+            bntCadastrar.Name = "bntCadastrar";
+            bntCadastrar.Size = new Size(127, 29);
+            bntCadastrar.TabIndex = 16;
+            bntCadastrar.Text = "Cadastrar";
+            bntCadastrar.UseVisualStyleBackColor = true;
+            bntCadastrar.Click += button1_Click;
             // 
-            // button2
+            // bntCancelar
             // 
-            button2.Location = new Point(401, 340);
-            button2.Name = "button2";
-            button2.Size = new Size(127, 29);
-            button2.TabIndex = 17;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            bntCancelar.Location = new Point(401, 340);
+            bntCancelar.Name = "bntCancelar";
+            bntCancelar.Size = new Size(127, 29);
+            bntCancelar.TabIndex = 17;
+            bntCancelar.Text = "Cancelar";
+            bntCancelar.UseVisualStyleBackColor = true;
+            bntCancelar.Click += button2_Click;
             // 
             // button3
             // 
@@ -204,28 +169,59 @@
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
+            // txtCpf
+            // 
+            txtCpf.Location = new Point(264, 181);
+            txtCpf.Name = "txtCpf";
+            txtCpf.Size = new Size(100, 23);
+            txtCpf.TabIndex = 21;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(372, 189);
+            label5.Name = "label5";
+            label5.Size = new Size(18, 15);
+            label5.TabIndex = 8;
+            label5.Text = "ID";
+            // 
+            // txtId
+            // 
+            txtId.Font = new Font("Microsoft Sans Serif", 8.25F);
+            txtId.Location = new Point(401, 187);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(48, 20);
+            txtId.TabIndex = 3;
+            // 
+            // txtTipoUsuario
+            // 
+            txtTipoUsuario.Location = new Point(349, 248);
+            txtTipoUsuario.Name = "txtTipoUsuario";
+            txtTipoUsuario.Size = new Size(100, 23);
+            txtTipoUsuario.TabIndex = 22;
+            // 
             // CadastroUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtTipoUsuario);
+            Controls.Add(txtCpf);
             Controls.Add(pictureBox1);
             Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(bntCancelar);
+            Controls.Add(bntCadastrar);
             Controls.Add(label8);
-            Controls.Add(textBox3);
+            Controls.Add(txtSenha);
             Controls.Add(label7);
-            Controls.Add(domainUpDown1);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtId);
+            Controls.Add(txtNome);
             Controls.Add(label2);
             Name = "CadastroUsuario";
             Text = "CadastroUsuario";
@@ -238,21 +234,21 @@
         #endregion
 
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtNome;
         private Label label1;
         private Label label3;
-        private Label label4;
-        private Label label5;
         private Label label6;
-        private DomainUpDown domainUpDown1;
         private Label label7;
         private Label label8;
-        private TextBox textBox3;
-        private Button button1;
-        private Button button2;
+        private TextBox txtSenha;
+        private Button bntCadastrar;
+        private Button bntCancelar;
         private Button button3;
         private Button button4;
         private PictureBox pictureBox1;
+        private TextBox txtCpf;
+        private Label label5;
+        private TextBox txtId;
+        private TextBox txtTipoUsuario;
     }
 }

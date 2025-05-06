@@ -22,7 +22,7 @@ namespace ControledeAcesso.Core
 
                 MySqlCommand cmd = new MySqlCommand();
 
-                string strConn = @"server=10.91.47.25;database=projetowfa;user=root;password="; // server local
+                string strConn = @"server=localhost;database=projetowfa;user=root;password="; // server local
 
                 MySqlConnection cn = new(strConn);
 

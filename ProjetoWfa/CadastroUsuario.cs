@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControledeAcesso.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,18 @@ namespace ProjetoWfa
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             Usuario usuario = new(txtNome.Text, txtCpf.Text, txtSenha.Text);
+            usuario.CadastrarUsuario();
+            txtId.Text = usuario.Id.ToString();
+            MessageBox.Show($"Usuário {usuario.Nome} gravado com sucesso com o ID {usuario.Id}");
+         
+
+
 
         }
     }
