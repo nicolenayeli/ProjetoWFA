@@ -59,5 +59,15 @@ namespace ControledeAcesso.UI.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_05_06_110537 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-05-06 110537", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

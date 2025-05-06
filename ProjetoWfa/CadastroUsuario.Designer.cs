@@ -52,7 +52,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Lucida Bright", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(276, 72);
+            label2.Location = new Point(241, 73);
             label2.Name = "label2";
             label2.Size = new Size(230, 24);
             label2.TabIndex = 1;
@@ -61,7 +61,7 @@
             // txtNome
             // 
             txtNome.Font = new Font("Microsoft Sans Serif", 8.25F);
-            txtNome.Location = new Point(287, 143);
+            txtNome.Location = new Point(273, 142);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(241, 20);
             txtNome.TabIndex = 2;
@@ -69,7 +69,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(236, 143);
+            label1.Location = new Point(222, 142);
             label1.Name = "label1";
             label1.Size = new Size(40, 15);
             label1.TabIndex = 5;
@@ -78,7 +78,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(236, 186);
+            label3.Location = new Point(222, 185);
             label3.Name = "label3";
             label3.Size = new Size(26, 15);
             label3.TabIndex = 6;
@@ -87,7 +87,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(235, 261);
+            label6.Location = new Point(221, 260);
             label6.Name = "label6";
             label6.Size = new Size(90, 15);
             label6.TabIndex = 9;
@@ -96,7 +96,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(667, 99);
+            label7.Location = new Point(654, 83);
             label7.Name = "label7";
             label7.Size = new Size(31, 15);
             label7.TabIndex = 12;
@@ -106,7 +106,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(236, 222);
+            label8.Location = new Point(222, 221);
             label8.Name = "label8";
             label8.Size = new Size(39, 15);
             label8.TabIndex = 15;
@@ -115,14 +115,14 @@
             // txtSenha
             // 
             txtSenha.Font = new Font("Microsoft Sans Serif", 8.25F);
-            txtSenha.Location = new Point(294, 222);
+            txtSenha.Location = new Point(280, 221);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(193, 20);
             txtSenha.TabIndex = 14;
             // 
             // bntCadastrar
             // 
-            bntCadastrar.Location = new Point(237, 340);
+            bntCadastrar.Location = new Point(213, 330);
             bntCadastrar.Name = "bntCadastrar";
             bntCadastrar.Size = new Size(127, 29);
             bntCadastrar.TabIndex = 16;
@@ -132,7 +132,7 @@
             // 
             // bntCancelar
             // 
-            bntCancelar.Location = new Point(401, 340);
+            bntCancelar.Location = new Point(377, 330);
             bntCancelar.Name = "bntCancelar";
             bntCancelar.Size = new Size(127, 29);
             bntCancelar.TabIndex = 17;
@@ -143,7 +143,7 @@
             // button3
             // 
             button3.BackColor = SystemColors.ControlLight;
-            button3.Location = new Point(592, 306);
+            button3.Location = new Point(584, 381);
             button3.Name = "button3";
             button3.Size = new Size(80, 29);
             button3.TabIndex = 18;
@@ -154,7 +154,7 @@
             // button4
             // 
             button4.BackColor = SystemColors.ControlLight;
-            button4.Location = new Point(684, 306);
+            button4.Location = new Point(676, 381);
             button4.Name = "button4";
             button4.Size = new Size(97, 29);
             button4.TabIndex = 19;
@@ -163,15 +163,16 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(613, 126);
+            pictureBox1.Image = ControledeAcesso.UI.Properties.Resources.Captura_de_tela_2025_05_06_110537;
+            pictureBox1.Location = new Point(542, 101);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(134, 174);
+            pictureBox1.Size = new Size(211, 246);
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
             // txtCpf
             // 
-            txtCpf.Location = new Point(264, 181);
+            txtCpf.Location = new Point(250, 180);
             txtCpf.Name = "txtCpf";
             txtCpf.Size = new Size(100, 23);
             txtCpf.TabIndex = 21;
@@ -179,7 +180,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(372, 189);
+            label5.Location = new Point(358, 188);
             label5.Name = "label5";
             label5.Size = new Size(18, 15);
             label5.TabIndex = 8;
@@ -188,14 +189,14 @@
             // txtId
             // 
             txtId.Font = new Font("Microsoft Sans Serif", 8.25F);
-            txtId.Location = new Point(401, 187);
+            txtId.Location = new Point(387, 186);
             txtId.Name = "txtId";
             txtId.Size = new Size(48, 20);
             txtId.TabIndex = 3;
             // 
             // txtTipoUsuario
             // 
-            txtTipoUsuario.Location = new Point(349, 248);
+            txtTipoUsuario.Location = new Point(335, 247);
             txtTipoUsuario.Name = "txtTipoUsuario";
             txtTipoUsuario.Size = new Size(100, 23);
             txtTipoUsuario.TabIndex = 22;

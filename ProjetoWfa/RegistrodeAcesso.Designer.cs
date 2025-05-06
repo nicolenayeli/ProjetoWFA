@@ -36,6 +36,7 @@
             textBox1 = new TextBox();
             label2 = new Label();
             dateTimePicker1 = new DateTimePicker();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -63,6 +64,7 @@
             dataGridView1.Size = new Size(302, 225);
             dataGridView1.TabIndex = 1;
             dataGridView1.TabStop = false;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Tipooperacaocln
             // 
@@ -102,12 +104,22 @@
             dateTimePicker1.Size = new Size(234, 23);
             dateTimePicker1.TabIndex = 4;
             // 
+            // button1
+            // 
+            button1.Location = new Point(364, 183);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 5;
+            button1.Text = "Atualizar";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // RegistrodeAcesso
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label2);
             Controls.Add(textBox1);
@@ -130,5 +142,6 @@
         private TextBox textBox1;
         private Label label2;
         private DateTimePicker dateTimePicker1;
+        private Button button1;
     }
 }

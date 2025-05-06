@@ -34,6 +34,7 @@
             btnEntrar = new Button();
             linkLabel1 = new LinkLabel();
             label4 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -66,7 +67,7 @@
             // 
             // btnEntrar
             // 
-            btnEntrar.Location = new Point(366, 311);
+            btnEntrar.Location = new Point(321, 279);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(75, 23);
             btnEntrar.TabIndex = 5;
@@ -94,12 +95,23 @@
             label4.TabIndex = 7;
             label4.Text = "Esqueceu a senha?";
             // 
+            // button1
+            // 
+            button1.Location = new Point(424, 279);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 8;
+            button1.Text = "Cancelar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(linkLabel1);
             Controls.Add(btnEntrar);
@@ -120,5 +132,6 @@
         private Button btnEntrar;
         private LinkLabel linkLabel1;
         private Label label4;
+        private Button button1;
     }
 }
